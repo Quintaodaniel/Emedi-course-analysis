@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Excel e Arquivos Temporários (Importante para o seu caso)
+~$*.xlsx
+*.xlsm
+*.xlsb
+
+# Outputs e Gráficos
+# Se você quiser salvar o código mas NÃO os arquivos gerados:
+outputs/*.png
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
