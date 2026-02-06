@@ -1,23 +1,29 @@
-# Python
+# --- Dados e Planilhas ---
+# Ignora toda a pasta data (onde está sua planilha)
+data/
+# Ignora arquivos Excel especificamente
+*.xlsx
+*.xls
+*.csv
+# Bloqueio direto do arquivo da imagem
+planilha_geral_cursos.xlsx
+
+# --- Python ---
 __pycache__/
 *.py[cod]
 *$py.class
 .venv/
 venv/
 env/
+.env
 
-# Excel e Arquivos Temporários (Importante para o seu caso)
-~$*.xlsx
-*.xlsm
-*.xlsb
+# --- Bancos de Dados ---
+# Como você mencionou o uso de DuckDB, ignore os arquivos de banco local
+*.db
+*.duckdb
 
-# Outputs e Gráficos
-# Se você quiser salvar o código mas NÃO os arquivos gerados:
-outputs/*.png
-
-# Sistema
+# --- Sistema e IDE ---
 .DS_Store
 Thumbs.db
-
-# VS Code
 .vscode/
+.idea/
