@@ -28,7 +28,7 @@ df_dados['data'] = pd.to_datetime(df_dados['data'])
 df_final = pd.merge(df_dados, df_referencia, on='id', how='left')
 
 # ADICIONADO O 'E1' NA LISTA ABAIXO:
-ids_para_grafico = ['C7', 'C8', 'E1'] 
+ids_para_grafico = ['C7', 'C8', 'E1', 'C9'] 
 
 df_filtrado = df_final[df_final['id'].isin(ids_para_grafico)].sort_values('data')
 
