@@ -1,6 +1,6 @@
 # --- Dados e Planilhas ---
 # Ignora toda a pasta data (onde está sua planilha)
-data/
+data/*.xlsx
 # Cria a exceção para o .gitkeep não ser ignorado
 !data/.gitkeep
 # Ignora arquivos Excel especificamente
