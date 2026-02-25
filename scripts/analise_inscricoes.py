@@ -25,7 +25,7 @@ df_dados['data'] = pd.to_datetime(df_dados['data'])
 df_final = pd.merge(df_dados, df_referencia, on='id', how='left')
 
 # Filtro dos itens desejados
-ids_para_grafico = ['C7', 'C8', 'E1', 'C9', 'C10', 'C11', 'E2'] 
+ids_para_grafico = ['C8', 'E1', 'C9', 'C10', 'C11', 'E2'] 
 df_filtrado = df_final[df_final['id'].isin(ids_para_grafico)].sort_values('data')
 df_filtrado['data_str'] = df_filtrado['data'].dt.strftime('%d/%m/%Y')
 
